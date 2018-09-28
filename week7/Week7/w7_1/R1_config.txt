@@ -1,0 +1,21 @@
+enable
+configure terminal
+ip routing
+
+interface FastEthernet0/0
+inter f0/0
+ip address 10.0.0.1 255.0.0.0
+no shutdown
+exit
+
+inter s1/0
+ip addresss 20.0.0.1 255.0.0.0
+clock rate 64000
+encapsulation ppp
+exit
+
+ip route 30.0.0.0 255.0.0.0 20.0.0.2
+
+
+
+

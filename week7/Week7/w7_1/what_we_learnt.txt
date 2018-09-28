@@ -1,0 +1,14 @@
+The PC should know the address of the default gateway to be able to communicate with the outside world. To do this the address of the default gateway must be set by doing the following:
+
+For PC-1:
+ip 10.0.0.10 10.0.0.1
+
+Here 10.0.0.10 is the ip address of PC-1 and 10.0.0.1 is the address of the default gateway
+
+for PC-2:
+
+ip 30.0.0.10 30.0.0.1 
+
+Here 30.0.0.10 is the ip address of PC-2 and 30.0.0.1 is the address of the default gateway.
+
+The reason for the default gateway addresses being different for both networks is that both the routers in this case are part of different networks
